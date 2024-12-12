@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "author": "Jane Doe",
+        "title": "First Post",
+        "content": "Hello World!)",
+        "likes": 5
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "Hello There!",
+        "likes": 3
+    },
+    {
+        "id": 3,
+        "author": "James Hue",
+        "title": "Another Post",
+        "content": "Hello Everyone!!!!!",
+        "likes": 7
+    }
+]

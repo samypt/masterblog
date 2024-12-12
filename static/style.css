@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.post, .form-group {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width : 80%;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    margin: 10px 0;
+}
+
+.add-button {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    overflow: visible; /* Ensure visibility of child elements like tooltips */
+    margin: 5px 0px;
+}
+
+.add-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* Tooltip styling */
+.add-button::after {
+    content: attr(title); /* Use the title attribute as the tooltip text */
+    position: absolute;
+    top: 50%; /* Align vertically with the button */
+    left: 110%; /* Position to the right of the button */
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+/* Show tooltip on hover */
+.add-button:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(5px); /* Smooth entrance */
+}
+
+
+.post button{
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Delete Button */
+.delete-btn {
+    background-color: #FF4C4C; /* Bright Red */
+    color: #FFFFFF; /* White Text */
+}
+
+.delete-btn:hover {
+    background-color: #FF1C1C; /* Darker Red */
+    opacity: 0.85;
+}
+
+/* Update Button */
+.update-btn {
+    background-color: #FFA500; /* Bright Orange */
+    color: #000000; /* Black Text */
+}
+
+.update-btn:hover {
+    background-color: #FF8C00; /* Darker Orange */
+    opacity: 0.85;
+}
+
+/* Like Button */
+.like-btn {
+    background-color: #4CAF50; /* Bright Green */
+    color: #FFFFFF; /* White Text */
+}
+
+.like-btn:hover {
+    background-color: #45A049; /* Darker Green */
+    opacity: 0.85;
+}
+
+.post {
+    display: flex;
+    flex-direction: column; /* Keep content in a vertical stack */
+    align-items: center; /* Center the content horizontally */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row; /* Keep content in a vertical stack */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    margin-top: 20px; /* Space between content and buttons */
+    gap: 10px; /* Add space between buttons */
+}
+
+.post, .form-group {
+    margin: 20px 0; /* Add some spacing between posts */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust as needed for your design */
+    margin-left: auto;
+    margin-right: auto; /* Centers the post container on the page */
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    width: 100%; /* Ensure buttons take up full width of the post */
+    margin-top: 20px; /* Space between content and buttons */
+    gap: 10px; /* Add space between buttons */
+}
+
+.inline-form {
+    margin: 0; /* Reset any default margins */
+    padding: 0; /* Reset any default padding */
+}
+
+
+.inline-form button {
+    margin-right: 5px;
+}
